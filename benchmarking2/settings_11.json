@@ -1,0 +1,39 @@
+{
+  "run_args": {
+    "tolerance": { "val": 0.0, "scale": 1.0 },
+    "input_scale": 11,
+    "param_scale": 11,
+    "scale_rebase_multiplier": 1,
+    "lookup_range": [-52480, 59550],
+    "logrows": 18,
+    "num_inner_cols": 2,
+    "variables": [["batch_size", 1]],
+    "input_visibility": "Private",
+    "output_visibility": "Public",
+    "param_visibility": "Fixed",
+    "div_rebasing": false,
+    "rebase_frac_zero_constants": false,
+    "check_mode": "UNSAFE",
+    "commitment": "KZG"
+  },
+  "num_rows": 167580,
+  "total_assignments": 335161,
+  "total_const_size": 3294,
+  "total_dynamic_col_size": 0,
+  "num_dynamic_lookups": 0,
+  "num_shuffles": 0,
+  "total_shuffle_col_size": 0,
+  "model_instance_shapes": [[1, 10]],
+  "model_output_scales": [11],
+  "model_input_scales": [11],
+  "module_sizes": { "polycommit": [], "poseidon": [0, [0]] },
+  "required_lookups": [{ "Sigmoid": { "scale": 2048.0 } }],
+  "required_range_checks": [
+    [-1024, 1024],
+    [-2, 2]
+  ],
+  "check_mode": "UNSAFE",
+  "version": "11.4.2",
+  "num_blinding_factors": null,
+  "timestamp": 1719014157049
+}
